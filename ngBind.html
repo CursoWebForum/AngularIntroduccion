@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html ng-app="app">
+
+  <head>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular-sanitize.js"></script>
+    <script src="script22.js"></script>
+  </head>
+
+  <body ng-controller="PruebaController">
+    <div>{{mensaje}}</div>
+    <div ng-bind="mensaje"></div>    
+    <div ng-bind-html="mensaje"></div>   
+    <div ng-non-bindable>{{mensaje}}</div>    
+  </body>
+
+</html>
