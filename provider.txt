@@ -1,0 +1,17 @@
+Un provider es como un factory pero permite que se configure antes de crear el 
+valor del servicio. En el ejemplo anterior vimos el ejemplo del servicio de hash 
+que se configuraba a través de un value llamado algoritmo. 
+ 
+El provider crea un objeto previo que permite configurar el factory antes de que 
+cree el valor del servicio. 
+Este nuevo objeto se llama Provider y en un bloque config podremos acceder a él 
+para poder configurar nuestro servicio.
+
+Un provider está compuesto de 2 partes:
+El PROVIDER que es una clase JavaScript de la que se crea un único objeto , 
+el cual permite llamarlo en un bloque config antes de que se llame al 
+factory-provider y asi poder configurar el factory-provider.
+
+El factory-provider, el cual crea el VALOR del servicio. 
+Es prácticamente como la función factory del ejemplo anterior y la llamamos 
+factory-provider.
